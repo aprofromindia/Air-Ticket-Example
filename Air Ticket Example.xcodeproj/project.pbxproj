@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624CBA6DED9C914C3BCC4229 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E1BAFCA10B119296C384D9 /* libPods.a */; };
+		A2579D801B3C112B002302ED /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2579D7F1B3C112B002302ED /* DetailTableViewController.m */; };
+		A2579DD61B3DC71A002302ED /* AirlineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2579DD51B3DC71A002302ED /* AirlineTableViewCell.m */; };
+		A2579E1A1B3DF265002302ED /* AirlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2579E191B3DF265002302ED /* AirlineTableViewCell.xib */; };
 		A2BE760A1B3BEEA000B28109 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE76091B3BEEA000B28109 /* main.m */; };
 		A2BE760D1B3BEEA000B28109 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE760C1B3BEEA000B28109 /* AppDelegate.m */; };
 		A2BE76101B3BEEA000B28109 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE760F1B3BEEA000B28109 /* ViewController.m */; };
 		A2BE76131B3BEEA000B28109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BE76111B3BEEA000B28109 /* Main.storyboard */; };
 		A2BE76151B3BEEA000B28109 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BE76141B3BEEA000B28109 /* Images.xcassets */; };
 		A2BE76181B3BEEA000B28109 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE76161B3BEEA000B28109 /* LaunchScreen.xib */; };
-		A2BE76241B3BEEA000B28109 /* Air_Ticket_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE76231B3BEEA000B28109 /* Air_Ticket_ExampleTests.m */; };
+		A2BE76671B3C06C400B28109 /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE76661B3C06C400B28109 /* RESTClient.m */; };
+		A2BE766A1B3C075300B28109 /* FlightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE76691B3C075300B28109 /* FlightModel.m */; };
+		A2D52E061B3EB2DE00A42A7F /* FormatterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D52E051B3EB2DE00A42A7F /* FormatterUtil.m */; };
+		A2D52E091B3F31CC00A42A7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D52E081B3F31CC00A42A7F /* SystemConfiguration.framework */; };
+		A2D52E0E1B4025A300A42A7F /* RESTClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D52E0D1B4025A300A42A7F /* RESTClientSpec.m */; };
+		A2D52E121B407F5300A42A7F /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D52E111B407F5300A42A7F /* ViewControllerSpec.m */; };
+		A2D52E141B407F6C00A42A7F /* DetailTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D52E131B407F6C00A42A7F /* DetailTableViewControllerSpec.m */; };
+		E95F0D922774AC4C3B716BD2 /* libPods-Air Ticket ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D3590D9976893563866E07 /* libPods-Air Ticket ExampleTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27E523B20BA4B5969C0B5C6C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		81F42AEAFDFBCAEBCB7A8394 /* Pods-Air Ticket ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air Ticket ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Air Ticket ExampleTests/Pods-Air Ticket ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		83519288598501C25201C742 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A2579D7E1B3C112B002302ED /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailTableViewController.h; path = "\U0010ViewControllers/DetailTableViewController.h"; sourceTree = "<group>"; };
+		A2579D7F1B3C112B002302ED /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailTableViewController.m; path = "\U0010ViewControllers/DetailTableViewController.m"; sourceTree = "<group>"; };
+		A2579DD41B3DC71A002302ED /* AirlineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AirlineTableViewCell.h; path = Views/AirlineTableViewCell.h; sourceTree = "<group>"; };
+		A2579DD51B3DC71A002302ED /* AirlineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AirlineTableViewCell.m; path = Views/AirlineTableViewCell.m; sourceTree = "<group>"; };
+		A2579E191B3DF265002302ED /* AirlineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AirlineTableViewCell.xib; path = Views/AirlineTableViewCell.xib; sourceTree = "<group>"; };
 		A2BE76041B3BEEA000B28109 /* Air Ticket Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Ticket Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BE76081B3BEEA000B28109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2BE76091B3BEEA000B28109 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +58,19 @@
 		A2BE76171B3BEEA000B28109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A2BE761D1B3BEEA000B28109 /* Air Ticket ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Air Ticket ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BE76221B3BEEA000B28109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2BE76231B3BEEA000B28109 /* Air_Ticket_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Air_Ticket_ExampleTests.m; sourceTree = "<group>"; };
+		A2BE76651B3C06C400B28109 /* RESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RESTClient.h; path = Networking/RESTClient.h; sourceTree = "<group>"; };
+		A2BE76661B3C06C400B28109 /* RESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RESTClient.m; path = Networking/RESTClient.m; sourceTree = "<group>"; };
+		A2BE76681B3C075300B28109 /* FlightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlightModel.h; path = Models/FlightModel.h; sourceTree = "<group>"; };
+		A2BE76691B3C075300B28109 /* FlightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlightModel.m; path = Models/FlightModel.m; sourceTree = "<group>"; };
+		A2D52E041B3EB2DE00A42A7F /* FormatterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormatterUtil.h; path = Utils/FormatterUtil.h; sourceTree = "<group>"; };
+		A2D52E051B3EB2DE00A42A7F /* FormatterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormatterUtil.m; path = Utils/FormatterUtil.m; sourceTree = "<group>"; };
+		A2D52E081B3F31CC00A42A7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A2D52E0D1B4025A300A42A7F /* RESTClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClientSpec.m; sourceTree = "<group>"; };
+		A2D52E111B407F5300A42A7F /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
+		A2D52E131B407F6C00A42A7F /* DetailTableViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewControllerSpec.m; sourceTree = "<group>"; };
+		C0E1BAFCA10B119296C384D9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D3590D9976893563866E07 /* libPods-Air Ticket ExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Air Ticket ExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38D5368E614839782FE0499 /* Pods-Air Ticket ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air Ticket ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Air Ticket ExampleTests/Pods-Air Ticket ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D52E091B3F31CC00A42A7F /* SystemConfiguration.framework in Frameworks */,
+				624CBA6DED9C914C3BCC4229 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +87,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95F0D922774AC4C3B716BD2 /* libPods-Air Ticket ExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E04B2BF94FC9868C4586DC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27E523B20BA4B5969C0B5C6C /* Pods.debug.xcconfig */,
+				83519288598501C25201C742 /* Pods.release.xcconfig */,
+				F38D5368E614839782FE0499 /* Pods-Air Ticket ExampleTests.debug.xcconfig */,
+				81F42AEAFDFBCAEBCB7A8394 /* Pods-Air Ticket ExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A2BE75FB1B3BEE9F00B28109 = {
 			isa = PBXGroup;
 			children = (
 				A2BE76061B3BEEA000B28109 /* Air Ticket Example */,
 				A2BE76201B3BEEA000B28109 /* Air Ticket ExampleTests */,
 				A2BE76051B3BEEA000B28109 /* Products */,
+				1E04B2BF94FC9868C4586DC7 /* Pods */,
+				F4568B574139CE75844686B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +128,13 @@
 		A2BE76061B3BEEA000B28109 /* Air Ticket Example */ = {
 			isa = PBXGroup;
 			children = (
+				A2D52E071B3EB2E200A42A7F /* Utils */,
+				A2BE766B1B3C0BDB00B28109 /* Views */,
+				A2BE762F1B3BFCE200B28109 /* Networking */,
+				A2BE762E1B3BFC7700B28109 /* Models */,
+				A2BE762D1B3BEEAF00B28109 /* ViewControllers */,
 				A2BE760B1B3BEEA000B28109 /* AppDelegate.h */,
 				A2BE760C1B3BEEA000B28109 /* AppDelegate.m */,
-				A2BE760E1B3BEEA000B28109 /* ViewController.h */,
-				A2BE760F1B3BEEA000B28109 /* ViewController.m */,
 				A2BE76111B3BEEA000B28109 /* Main.storyboard */,
 				A2BE76141B3BEEA000B28109 /* Images.xcassets */,
 				A2BE76161B3BEEA000B28109 /* LaunchScreen.xib */,
@@ -105,7 +155,8 @@
 		A2BE76201B3BEEA000B28109 /* Air Ticket ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2BE76231B3BEEA000B28109 /* Air_Ticket_ExampleTests.m */,
+				A2D52E0D1B4025A300A42A7F /* RESTClientSpec.m */,
+				A2D52E151B407F7700A42A7F /* ViewControllers */,
 				A2BE76211B3BEEA000B28109 /* Supporting Files */,
 			);
 			path = "Air Ticket ExampleTests";
@@ -119,6 +170,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A2BE762D1B3BEEAF00B28109 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2BE760E1B3BEEA000B28109 /* ViewController.h */,
+				A2BE760F1B3BEEA000B28109 /* ViewController.m */,
+				A2579D7E1B3C112B002302ED /* DetailTableViewController.h */,
+				A2579D7F1B3C112B002302ED /* DetailTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A2BE762E1B3BFC7700B28109 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2BE76681B3C075300B28109 /* FlightModel.h */,
+				A2BE76691B3C075300B28109 /* FlightModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A2BE762F1B3BFCE200B28109 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A2BE76651B3C06C400B28109 /* RESTClient.h */,
+				A2BE76661B3C06C400B28109 /* RESTClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A2BE766B1B3C0BDB00B28109 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2579DD41B3DC71A002302ED /* AirlineTableViewCell.h */,
+				A2579DD51B3DC71A002302ED /* AirlineTableViewCell.m */,
+				A2579E191B3DF265002302ED /* AirlineTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A2D52E071B3EB2E200A42A7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A2D52E041B3EB2DE00A42A7F /* FormatterUtil.h */,
+				A2D52E051B3EB2DE00A42A7F /* FormatterUtil.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A2D52E151B407F7700A42A7F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2D52E111B407F5300A42A7F /* ViewControllerSpec.m */,
+				A2D52E131B407F6C00A42A7F /* DetailTableViewControllerSpec.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4568B574139CE75844686B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2D52E081B3F31CC00A42A7F /* SystemConfiguration.framework */,
+				C0E1BAFCA10B119296C384D9 /* libPods.a */,
+				C3D3590D9976893563866E07 /* libPods-Air Ticket ExampleTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2BE76271B3BEEA000B28109 /* Build configuration list for PBXNativeTarget "Air Ticket Example" */;
 			buildPhases = (
+				10F5894FFEE771D87637C852 /* Check Pods Manifest.lock */,
 				A2BE76001B3BEEA000B28109 /* Sources */,
 				A2BE76011B3BEEA000B28109 /* Frameworks */,
 				A2BE76021B3BEEA000B28109 /* Resources */,
+				83E61031915D89D3EC546604 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2BE762A1B3BEEA000B28109 /* Build configuration list for PBXNativeTarget "Air Ticket ExampleTests" */;
 			buildPhases = (
+				439FEE246D362050D47C9C65 /* Check Pods Manifest.lock */,
 				A2BE76191B3BEEA000B28109 /* Sources */,
 				A2BE761A1B3BEEA000B28109 /* Frameworks */,
 				A2BE761B1B3BEEA000B28109 /* Resources */,
+				8043D0C7FCB00ED120255842 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2579E1A1B3DF265002302ED /* AirlineTableViewCell.xib in Resources */,
 				A2BE76131B3BEEA000B28109 /* Main.storyboard in Resources */,
 				A2BE76181B3BEEA000B28109 /* LaunchScreen.xib in Resources */,
 				A2BE76151B3BEEA000B28109 /* Images.xcassets in Resources */,
@@ -214,12 +337,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10F5894FFEE771D87637C852 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		439FEE246D362050D47C9C65 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8043D0C7FCB00ED120255842 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Air Ticket ExampleTests/Pods-Air Ticket ExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83E61031915D89D3EC546604 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2BE76001B3BEEA000B28109 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BE76671B3C06C400B28109 /* RESTClient.m in Sources */,
+				A2579D801B3C112B002302ED /* DetailTableViewController.m in Sources */,
+				A2579DD61B3DC71A002302ED /* AirlineTableViewCell.m in Sources */,
 				A2BE76101B3BEEA000B28109 /* ViewController.m in Sources */,
+				A2D52E061B3EB2DE00A42A7F /* FormatterUtil.m in Sources */,
+				A2BE766A1B3C075300B28109 /* FlightModel.m in Sources */,
 				A2BE760D1B3BEEA000B28109 /* AppDelegate.m in Sources */,
 				A2BE760A1B3BEEA000B28109 /* main.m in Sources */,
 			);
@@ -229,7 +420,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2BE76241B3BEEA000B28109 /* Air_Ticket_ExampleTests.m in Sources */,
+				A2D52E0E1B4025A300A42A7F /* RESTClientSpec.m in Sources */,
+				A2D52E121B407F5300A42A7F /* ViewControllerSpec.m in Sources */,
+				A2D52E141B407F6C00A42A7F /* DetailTableViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -345,6 +538,7 @@
 		};
 		A2BE76281B3BEEA000B28109 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E523B20BA4B5969C0B5C6C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Air Ticket Example/Info.plist";
@@ -355,6 +549,7 @@
 		};
 		A2BE76291B3BEEA000B28109 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83519288598501C25201C742 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Air Ticket Example/Info.plist";
@@ -365,6 +560,7 @@
 		};
 		A2BE762B1B3BEEA000B28109 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38D5368E614839782FE0499 /* Pods-Air Ticket ExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,6 +580,7 @@
 		};
 		A2BE762C1B3BEEA000B28109 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F42AEAFDFBCAEBCB7A8394 /* Pods-Air Ticket ExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,6 +613,7 @@
 				A2BE76291B3BEEA000B28109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2BE762A1B3BEEA000B28109 /* Build configuration list for PBXNativeTarget "Air Ticket ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +622,7 @@
 				A2BE762C1B3BEEA000B28109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

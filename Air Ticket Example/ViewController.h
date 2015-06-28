@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class  RESTClient;
 
 @interface ViewController : UIViewController
 
+/*!
+ *  @brief  Default initialiser
+ *
+ *  @param restClient REST Client
+ *
+ *  @return Instance value
+ */
+- (instancetype)initWithRESTClient:(RESTClient *) restClient NS_DESIGNATED_INITIALIZER;
 
 @end
 
