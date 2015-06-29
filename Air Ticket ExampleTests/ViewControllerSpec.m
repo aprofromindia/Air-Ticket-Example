@@ -20,6 +20,7 @@ describe(@"ViewController", ^{
     beforeEach(^{
         _viewC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
                   instantiateViewControllerWithIdentifier:@"ViewController"];
+        _viewC.view;
     });
     
     it(@"should not be nil and should be an instance of ViewController", ^{
@@ -32,11 +33,13 @@ describe(@"ViewController", ^{
     });
     
     it(@"arrival field should be yellow", ^{
-//        expect(_viewC->_arrivalField.backgroundColor).to.equal([UIColor yellowColor]);
+        expect(((UITextField *)[_viewC valueForKey:@"_arrivalField"]).backgroundColor).to.equal([UIColor yellowColor]);
     });
     
     it(@"departure field should be white when input is LHR", ^{
-        
+        UITextField *departureField = (UITextField *) [_viewC valueForKey:@"_departureField"];
+        departureField.text = @"LHR";
+        expect(departureField.backgroundColor).to.equal([UIColor whiteColor]);
     });
     
     afterEach(^{

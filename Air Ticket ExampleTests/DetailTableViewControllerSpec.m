@@ -20,13 +20,15 @@ describe(@"DetailTableViewController", ^{
     beforeEach(^{
         _detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
                      instantiateViewControllerWithIdentifier:@"DetailTableViewController"];
+        _detailVC.view;
     });
     
     it(@"Should not be nil", ^{
         expect(_detailVC).notTo.equal(nil);
+
     });
     
-    it(@"should be a DetailTableViewController", ^{
+    it(@"Shoould be an instance of a DetailTableViewController", ^{
         expect(_detailVC).to.beInstanceOf([DetailTableViewController class]);
     });
     
