@@ -10,10 +10,16 @@
 #import <Expecta/Expecta.h>
 #import "RESTClient.h"
 
+@interface RESTClient (Test)
+
+- (instancetype)initWithURLSession:(NSURLSession *) urlSession;
+
+@end
+
 @implementation RESTClient(Test)
 
 + (RESTClient *) uniqueInstance{
-    RESTClient *client = [RESTClient new];
+    RESTClient *client = [[RESTClient alloc] initWithURLSession:[NSURLSession sharedSession]];
     return client;
 }
 

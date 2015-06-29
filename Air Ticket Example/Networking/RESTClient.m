@@ -26,11 +26,11 @@ static NSString *const kJSONMimeType = @"application/json";
 
 @implementation RESTClient
 
-- (instancetype)init
+- (instancetype)initWithURLSession:(NSURLSession *) urlSession
 {
     self = [super init];
     if (self) {
-        _urlSession = [NSURLSession sharedSession];
+        _urlSession = urlSession;
     }
     return self;
 }
@@ -40,7 +40,7 @@ static NSString *const kJSONMimeType = @"application/json";
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedClient = [self new];
+        sharedClient = [[self alloc] initWithURLSession:[NSURLSession sharedSession]];
     });
     return sharedClient;
 }
