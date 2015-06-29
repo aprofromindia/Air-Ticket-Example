@@ -18,8 +18,8 @@ describe(@"DetailTableViewController", ^{
     __block DetailTableViewController *_detailVC;
     
     beforeEach(^{
-        _detailVC = [[DetailTableViewController alloc] initWithStyle:UITableViewStylePlain];
-        [_detailVC loadView];
+        _detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
+                     instantiateViewControllerWithIdentifier:@"DetailTableViewController"];
     });
     
     it(@"Should not be nil", ^{

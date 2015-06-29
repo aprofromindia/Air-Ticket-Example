@@ -18,8 +18,8 @@ describe(@"ViewController", ^{
     __block ViewController *_viewC;
     
     beforeEach(^{
-        _viewC = [[ViewController alloc] init];
-        [_viewC loadView];
+        _viewC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
+                  instantiateViewControllerWithIdentifier:@"ViewController"];
     });
     
     it(@"should not be nil and should be an instance of ViewController", ^{
