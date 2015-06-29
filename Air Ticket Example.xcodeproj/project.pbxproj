@@ -17,7 +17,7 @@
 		A2BE76131B3BEEA000B28109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BE76111B3BEEA000B28109 /* Main.storyboard */; };
 		A2BE76151B3BEEA000B28109 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BE76141B3BEEA000B28109 /* Images.xcassets */; };
 		A2BE76181B3BEEA000B28109 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE76161B3BEEA000B28109 /* LaunchScreen.xib */; };
-		A2BE76671B3C06C400B28109 /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE76661B3C06C400B28109 /* RESTClient.m */; };
+		A2BE76671B3C06C400B28109 /* RESTClientImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE76661B3C06C400B28109 /* RESTClientImpl.m */; };
 		A2BE766A1B3C075300B28109 /* FlightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE76691B3C075300B28109 /* FlightModel.m */; };
 		A2D52E061B3EB2DE00A42A7F /* FormatterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D52E051B3EB2DE00A42A7F /* FormatterUtil.m */; };
 		A2D52E091B3F31CC00A42A7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D52E081B3F31CC00A42A7F /* SystemConfiguration.framework */; };
@@ -58,8 +58,8 @@
 		A2BE76171B3BEEA000B28109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A2BE761D1B3BEEA000B28109 /* Air Ticket ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Air Ticket ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BE76221B3BEEA000B28109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2BE76651B3C06C400B28109 /* RESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RESTClient.h; path = Networking/RESTClient.h; sourceTree = "<group>"; };
-		A2BE76661B3C06C400B28109 /* RESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RESTClient.m; path = Networking/RESTClient.m; sourceTree = "<group>"; };
+		A2BE76651B3C06C400B28109 /* RESTClientImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RESTClientImpl.h; path = Networking/RESTClientImpl.h; sourceTree = "<group>"; };
+		A2BE76661B3C06C400B28109 /* RESTClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RESTClientImpl.m; path = Networking/RESTClientImpl.m; sourceTree = "<group>"; };
 		A2BE76681B3C075300B28109 /* FlightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlightModel.h; path = Models/FlightModel.h; sourceTree = "<group>"; };
 		A2BE76691B3C075300B28109 /* FlightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlightModel.m; path = Models/FlightModel.m; sourceTree = "<group>"; };
 		A2D52E041B3EB2DE00A42A7F /* FormatterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormatterUtil.h; path = Utils/FormatterUtil.h; sourceTree = "<group>"; };
@@ -193,8 +193,8 @@
 		A2BE762F1B3BFCE200B28109 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A2BE76651B3C06C400B28109 /* RESTClient.h */,
-				A2BE76661B3C06C400B28109 /* RESTClient.m */,
+				A2BE76651B3C06C400B28109 /* RESTClientImpl.h */,
+				A2BE76661B3C06C400B28109 /* RESTClientImpl.m */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -405,7 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2BE76671B3C06C400B28109 /* RESTClient.m in Sources */,
+				A2BE76671B3C06C400B28109 /* RESTClientImpl.m in Sources */,
 				A2579D801B3C112B002302ED /* DetailTableViewController.m in Sources */,
 				A2579DD61B3DC71A002302ED /* AirlineTableViewCell.m in Sources */,
 				A2BE76101B3BEEA000B28109 /* ViewController.m in Sources */,

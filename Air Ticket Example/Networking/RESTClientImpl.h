@@ -8,14 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RESTClient : NSObject
-
-/*!
- *  @brief  Method provides access to singleton instance
- *
- *  @return singleton instance
- */
-+ (instancetype) sharedInstance;
+@protocol RESTClient <NSObject>
 
 /*!
  *  @brief  GETs flight routes
@@ -26,5 +19,17 @@
  */
 - (void) get_routesWithParams:(NSDictionary *) paramsDict
                     onSuccess:(void (^)(NSArray *response)) successHandler onError:(void (^)(NSError *error)) errorHandler;
+
+@end
+
+
+@interface RESTClientImpl : NSObject <RESTClient>
+
+/*!
+ *  @brief  Method provides access to singleton instance
+ *
+ *  @return singleton instance
+ */
++ (instancetype) sharedInstance;
 
 @end

@@ -8,18 +8,18 @@
 
 #import <Specta/Specta.h>
 #import <Expecta/Expecta.h>
-#import "RESTClient.h"
+#import "RESTClientImpl.h"
 
-@interface RESTClient (Test)
+@interface RESTClientImpl (Test)
 
 - (instancetype)initWithURLSession:(NSURLSession *) urlSession;
 
 @end
 
-@implementation RESTClient(Test)
+@implementation RESTClientImpl(Test)
 
-+ (RESTClient *) uniqueInstance{
-    RESTClient *client = [[RESTClient alloc] initWithURLSession:[NSURLSession sharedSession]];
++ (RESTClientImpl *) uniqueInstance{
+    RESTClientImpl *client = [[RESTClientImpl alloc] initWithURLSession:[NSURLSession sharedSession]];
     return client;
 }
 
@@ -30,10 +30,10 @@ SpecBegin(RESTClient)
 
 describe(@"RESTClient", ^{
     
-    __block RESTClient *_restClient;
+    __block RESTClientImpl *_restClient;
     
     beforeEach(^{
-        _restClient = [RESTClient uniqueInstance];
+        _restClient = [RESTClientImpl uniqueInstance];
     });
     
     it(@"should not be nil", ^{

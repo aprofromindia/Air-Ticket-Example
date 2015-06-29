@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class  RESTClient;
+#import "RESTClientImpl.h"
 
 @interface ViewController : UIViewController
 
@@ -18,7 +18,7 @@
  *
  *  @return Instance value
  */
-- (instancetype)initWithRESTClient:(RESTClient *) restClient NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithRESTClient:(id<RESTClient>) restClient NS_DESIGNATED_INITIALIZER;
 
 @end
 

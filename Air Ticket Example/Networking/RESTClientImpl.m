@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Apro. All rights reserved.
 //
 
-#import "RESTClient.h"
+#import "RESTClientImpl.h"
 #import "FlightModel.h"
 
 static NSString *const kURL = @"http://nmflightservice.cloudapp.net/api/Flight";
@@ -18,13 +18,13 @@ static const int kHTTPOk = 200;
 static NSString *const kJSONMimeType = @"application/json";
 
 
-@interface RESTClient (){
+@interface RESTClientImpl (){
     NSURLSession *_urlSession;
 }
 
 @end
 
-@implementation RESTClient
+@implementation RESTClientImpl
 
 - (instancetype)initWithURLSession:(NSURLSession *) urlSession
 {
@@ -36,7 +36,7 @@ static NSString *const kJSONMimeType = @"application/json";
 }
 
 + (instancetype)sharedInstance{
-    static RESTClient *sharedClient;
+    static RESTClientImpl *sharedClient;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

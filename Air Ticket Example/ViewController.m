@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "RESTClient.h"
 #import "DetailTableViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
@@ -19,7 +18,7 @@ static NSString *const kDepartureDateKey = @"DepartureDate";
 static NSString *const kReturnDateKey = @"ReturnDate";
 
 @interface ViewController (){
-    RESTClient *_restClient;
+    id<RESTClient> _restClient;
     
     IBOutlet UITextField __weak *_departureField;
     IBOutlet UITextField __weak *_arrivalField;
@@ -35,10 +34,10 @@ static NSString *const kReturnDateKey = @"ReturnDate";
 #pragma mark - initialisers
 
 - (instancetype)init{
-    return [self initWithRESTClient:[RESTClient sharedInstance]];
+    return [self initWithRESTClient:[RESTClientImpl sharedInstance]];
 }
 
-- (instancetype)initWithRESTClient:(RESTClient *) restClient
+- (instancetype)initWithRESTClient:(id<RESTClient>) restClient
 {
     self = [super init];
     if (self) {
@@ -52,7 +51,7 @@ static NSString *const kReturnDateKey = @"ReturnDate";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _restClient = [RESTClient sharedInstance];
+    _restClient = [RESTClientImpl sharedInstance];
     _depatureDatePicker.minimumDate = [NSDate date];
     _returnDatePicker.minimumDate = [NSDate date];
     
