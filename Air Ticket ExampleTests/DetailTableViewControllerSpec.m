@@ -20,7 +20,7 @@ describe(@"DetailTableViewController", ^{
     beforeEach(^{
         _detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
                      instantiateViewControllerWithIdentifier:@"DetailTableViewController"];
-        [_detailVC loadView];
+        _detailVC.view;
     });
     
     it(@"Should not be nil", ^{
