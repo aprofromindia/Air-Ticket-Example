@@ -42,6 +42,12 @@ describe(@"ViewController", ^{
         expect(departureField.backgroundColor).to.equal([UIColor whiteColor]);
     });
     
+    it(@"arrival field should be white when input is LHR", ^{
+        UITextField *arrivalField = (UITextField *) [_viewC valueForKey:@"_arrivalField"];
+        arrivalField.text = @"LHR";
+        expect(arrivalField.backgroundColor).to.equal([UIColor whiteColor]);
+    });
+    
     afterEach(^{
         _viewC = nil;
     });
