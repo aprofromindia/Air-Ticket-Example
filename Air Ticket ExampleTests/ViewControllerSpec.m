@@ -20,7 +20,7 @@ describe(@"ViewController", ^{
     beforeEach(^{
         _viewC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
                   instantiateViewControllerWithIdentifier:@"ViewController"];
-        _viewC.view;
+        [_viewC view];
     });
     
     it(@"should not be nil and should be an instance of ViewController", ^{
@@ -46,6 +46,10 @@ describe(@"ViewController", ^{
         UITextField *arrivalField = (UITextField *) [_viewC valueForKey:@"_arrivalField"];
         arrivalField.text = @"LHR";
         expect(arrivalField.backgroundColor).to.equal([UIColor whiteColor]);
+    });
+    
+    it(@"Search button should be disabled", ^{
+//        expect((UIButton *)[_viewC valueForKey:@"_searchBtn"]).
     });
     
     afterEach(^{
