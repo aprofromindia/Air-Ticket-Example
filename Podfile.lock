@@ -1,0 +1,39 @@
+PODS:
+  - Expecta (1.0.0)
+  - JSONModel (1.1.0)
+  - MBProgressHUD (0.9.1)
+  - OCHamcrest (4.1.1)
+  - OCMockito (1.4.0):
+    - OCHamcrest (~> 4.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - Specta (1.0.2)
+
+DEPENDENCIES:
+  - Expecta (~> 1.0.0)
+  - JSONModel (~> 1.1)
+  - MBProgressHUD (~> 0.9.1)
+  - OCMockito (~> 1.4.0)
+  - ReactiveCocoa (~> 2.5)
+  - SDWebImage (~> 3.7)
+  - Specta (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
+  JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
+  OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
+
+COCOAPODS: 0.37.2
